@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#dir=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20130924_LBBasicMM/Mapmake/src_fpdb
+dir=/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v1.0/Simulator/src_fpdb
+
+#filename=${dir}/fp_db/LB_HFW_example
+filename=${dir}/LB_HFW_example_tmp3
+skyview=True
+rm ${filename}.db
+python simedFPDB4LB_v3.py $filename $skyview
+

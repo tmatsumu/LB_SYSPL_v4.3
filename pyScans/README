@@ -1,0 +1,17 @@
+README for pyScan 
+initial 2014-10-2 written by T. Matsumura
+
+do 
+> ./init.sh
+
+then you know what to do...
+
+The general description is 
+    1. go to gen_run
+    2. open run_20141009_example.sh 
+       change the followings
+       	      date=20141009_example
+	      python ${dir_bin}/src/run_scan_todgen_c.mod.py y LB_L2_${date}_samplerate 10 86400. 65. 93. 30. 0.1 365 256
+    3. > ./run_20141009_example.sh
+    4. if the above doesn't work, then do 
+       > chmod 744 ./run_20141009_example.sh

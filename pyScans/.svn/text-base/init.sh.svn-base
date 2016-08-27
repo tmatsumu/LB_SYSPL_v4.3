@@ -1,0 +1,37 @@
+#!/bin/sh
+
+echo ''
+echo '##############################'
+echo ''
+echo 'Initialization in pyScan, T.Matsumura 2013-12-20'
+echo ''
+echo '> init.sh help'
+echo ''
+echo 'This script creats the symbolic link for pyScans'
+echo ' and symbolic link to the pointing data'
+echo '##############################'
+echo ''
+
+dir=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20130924_LBBasicMM/
+dir_data=/group/cmb/litebird/simdata/Scans/dataout/
+
+if [[ $1 = "help" ]];then
+    echo 'change the two dir names in init.sh'
+    echo 'dir'
+    echo 'dir_data'
+    echo ''
+    echo 'In order to run, TYPE '
+    echo '$ ./init.sh exec'
+    echo ''
+fi
+
+
+if [[ $1 = "exec" ]];then
+    echo ''
+    echo 'add the sympolic link of codes/matsumulib.py to pyScans/src'
+    ln -s ${dir}/codes/matsumulib.py  ${dir}/pyScans/src/matsumulib.py
+    echo 'add the sympolic link of codes/matsumulib.py to pyScans/src'
+
+    ln -s ${dir_data} ${dir}/pyScans/dataout
+    echo ''
+fi

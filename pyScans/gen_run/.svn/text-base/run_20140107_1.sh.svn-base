@@ -1,0 +1,19 @@
+#!/bin/sh
+
+dir_bin=/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v1.0/pyScans/
+
+# (option of shell input)
+# (title)
+# (sampleing [Hz])
+# (sec in a day)
+# (precession angle [degs])
+# (precession period [min])
+# (spin axis angle [degs])
+# (spin axis period [rpm])
+# (sim run period [days])
+# (nside for projection)
+
+date=20140107
+
+bsub -q s -o $dir_bin/gen_run/log_${date}.txt python ${dir_bin}/src/run_scan_todgen_c.mod.py y LB_L2_${date}_samplerate 10 5400. 65. 95. 30. 0.1 1 256
+

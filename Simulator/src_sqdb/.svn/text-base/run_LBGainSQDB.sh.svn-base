@@ -1,0 +1,27 @@
+#!/bin/sh
+
+dir_mm=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20130924_LBBasicMM/Mapmake/src/
+dir_db=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20130924_LBBasicMM/Mapmake/data_proj/DB/
+
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_bias_0.db flat_bias 0. 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_bias_0p05.db flat_bias 0.05 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_bias_0p01.db flat_bias 0.01 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_bias_0p005.db flat_bias 0.005 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_bias_0p001.db flat_bias 0.001 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_bias_0p0005.db flat_bias 0.0005 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_bias_0p0001.db flat_bias 0.0001 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_bias_0p00005.db flat_bias 0.00005 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_bias_0p00001.db flat_bias 0.00001 0. 
+
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_random_0p05.db flat_random 0.05 0. 0. 0. 0.
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_random_0p01.db flat_random 0.01 0. 0. 0. 0.
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_random_0p005.db flat_random 0.005 0. 0. 0. 0.
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_random_0p001.db flat_random 0.001 0. 0. 0. 0.
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_random_0p0005.db flat_random 0.0005 0. 0. 0. 0.
+
+
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_1of_0p05_0p0002_2.db flat_1of 0.05 0.0002 2. 0. 0. 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_1of_0p01_0p0002_2.db flat_1of 0.01 0.0002 2. 0. 0. 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_1of_0p005_0p0002_2.db flat_1of 0.005 0.0002 2. 0. 0. 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_1of_0p001_0p0002_2.db flat_1of 0.001 0.0002 2. 0. 0. 0. 
+python $dir_mm/gen_LBGainSQDB.py $dir_db/fp_db/LB_HFW_example.db $dir_db/gain_db/relgain_flat_1of_0p0005_0p0002_2.db flat_1of 0.0005 0.0002 2. 0. 0. 0. 

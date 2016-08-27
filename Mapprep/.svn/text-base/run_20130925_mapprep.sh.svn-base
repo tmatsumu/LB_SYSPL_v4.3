@@ -1,0 +1,7 @@
+#!/bin/sh
+
+dir=/group/cmb/litebird/simdata/Maps/CMB/LSM_0001/PSM_OUTPUT/observations/PSM_IDEAL/band1/
+dirout=/group/cmb/litebird/simdata/Maps/CMB/tmp/
+filename=group1_map_band1
+nsideout=512
+python gen_mapprep.py $dir $filename $nsideout $dirout

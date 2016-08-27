@@ -1,0 +1,31 @@
+#!/bin/sh
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null0
+python gen_add_dipole.py $fname_map 
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null1
+python gen_add_dipole.py $fname_map 
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null2
+python gen_add_dipole.py $fname_map 
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null3
+python gen_add_dipole.py $fname_map 
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null4
+python gen_add_dipole.py $fname_map 
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null5
+python gen_add_dipole.py $fname_map 
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null6
+python gen_add_dipole.py $fname_map 
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null7
+python gen_add_dipole.py $fname_map 
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null8
+python gen_add_dipole.py $fname_map 
+
+fname_map=/home/cmb/tmatsumu/develop/LiteBIRD/projects/20131224_BeamAsymmetry/fits/map_PSF_140.0GHz_350.0mm_null9
+python gen_add_dipole.py $fname_map 

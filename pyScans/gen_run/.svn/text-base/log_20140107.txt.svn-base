@@ -1,0 +1,813 @@
+Sender: LSF System <lsfadmin@ccb0223.cc.kek.jp>
+Subject: Job 18268605: <python /home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v1.0/pyScans//src/run_scan_todgen_c.mod.py y LB_L2_20140107_samplerate 10 5400. 65. 95. 30. 0.1 1 256> Done
+
+Job <python /home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v1.0/pyScans//src/run_scan_todgen_c.mod.py y LB_L2_20140107_samplerate 10 5400. 65. 95. 30. 0.1 1 256> was submitted from host <ccw04.cc.kek.jp> by user <tmatsumu> in cluster <centralcluster>.
+Job was executed on host(s) <ccb0223.cc.kek.jp>, in queue <s>, as user <tmatsumu> in cluster <centralcluster>.
+</home/cmb/tmatsumu> was used as the home directory.
+</home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v1.0/pyScans/gen_run> was used as the working directory.
+Started at Tue Jan  7 09:17:16 2014
+Results reported at Tue Jan  7 09:17:36 2014
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python /home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v1.0/pyScans//src/run_scan_todgen_c.mod.py y LB_L2_20140107_samplerate 10 5400. 65. 95. 30. 0.1 1 256
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      9.89 sec.
+    Max Memory :       357 MB
+    Max Swap   :       760 MB
+
+    Max Processes  :         3
+    Max Threads    :         4
+
+The output (if any) follows:
+
+            title: LB_L2_20140107_samplerate <type 'str'>
+      smaple_rate: 10.0 <type 'float'>
+       total_time: 5400.0 <type 'float'>
+    theta_antisun: 65.0 <type 'float'>
+     freq_antisun: 0.000175438596491 <type 'float'>
+  theta_boresight: 30.0 <type 'float'>
+   freq_boresight: 0.00166666666667 <type 'float'>
+            ydays: 1 <type 'int'>
+            nside: 256 <type 'int'>
+     today_julian: 2458928.65972 <type 'numpy.ndarray'>
+   option_gen_ptg: True <type 'bool'>
+          dir_out: /group/cmb/litebird/simdata/Scans/dataout/ <type 'str'>
+
+current date:  1 / 1
+[lib_LBscan.py,gen_scan_c_mod] initial 0.00205483436584 min
+[lib_LBscan.py,gen_scan_c_mod] The number of samples in a day 54000
+[lib_LBscan.py,gen_scan_c_mod] before sun_position_quick 0.00207218329112 min
+[lib_LBscan.py,gen_scan_c_mod] before LB_rotmatrix_multi 0.00213620265325 min
+[lib_LBscan.py,gen_scan_c_mod] before summing up 0.004318968455 min
+54000 54000 53999 54000
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please dOverwriting existing file '/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/fits/nhits_1_tmp.fits'.
+Overwriting existing file '/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/fits/cos_r1_1_tmp.fits'.
+Overwriting existing file '/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/fits/sin_r1_1_tmp.fits'.
+Overwriting existing file '/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/fits/cos_r2_1_tmp.fits'.
+Overwriting existing file '/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/fits/sin_r2_1_tmp.fits'.
+Overwriting existing file '/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/fits/cos_r4_1_tmp.fits'.
+Overwriting existing file '/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/fits/sin_r4_1_tmp.fits'.
+/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v1.0/pyScans//src/run_scan_todgen_c.mod.py:151: RuntimeWarning: invalid value encountered in divide
+  r1 = np.sqrt((cos_r1/np.float_(nhits))**2. + (sin_r1/np.float_(nhits))**2.)
+/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v1.0/pyScans//src/run_scan_todgen_c.mod.py:152: RuntimeWarning: invalid value encountered in divide
+  r2 = np.sqrt((cos_r2/np.float_(nhits))**2. + (sin_r2/np.float_(nhits))**2.)
+/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v1.0/pyScans//src/run_scan_todgen_c.mod.py:153: RuntimeWarning: invalid value encountered in divide
+  r4 = np.sqrt((cos_r4/np.float_(nhits))**2. + (sin_r4/np.float_(nhits))**2.)
+elete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+
+DB already exists!
+Please delete the file or check the file name.
+Currently overwriting  /group/cmb/litebird/simdata/Scans/dataout/LB_L2_20140107_samplerate_SCANSPEC_90min_65.0degs_95.0min_30.0degs_0.1rpm_1day_nside256_10Hz/ptg/LBPTG_latlon_eclip_2458928.db
+
+[lib_LBscan.py,gen_scan_c_mod] before writing text file [True] 0.0159777522087 min
+[lib_LBscan.py,gen_scan_c_mod] END of gen_scan_c_mod  0.0159779191017 min
+
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+0.0 180.0 -180.0 180.0
+The interval between parallels is 10 deg 0.00'.
+The interval between meridians is 10 deg 0.00'.
+[run_scan_todgen_c.py] END of the program
+

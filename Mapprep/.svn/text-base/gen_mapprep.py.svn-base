@@ -1,0 +1,19 @@
+import numpy as np
+import pylab as py
+import healpy as h
+import sys
+
+dir = sys.argv[1]
+filename = (sys.argv[2])
+nsideout = int(sys.argv[3])
+dirout = sys.argv[4]
+
+T = h.read_map(dir+filename+'.fits',field=0)
+T = h.ud_grade(T, nsideout)
+Q = h.read_map(dir+filename+'.fits',field=1)
+Q = h.ud_grade(Q, nsideout)
+U = h.read_map(dir+filename+'.fits',field=2)
+U = h.ud_grade(U, nsideout)
+
+TQU = [T,Q,U]
+h.write_map(dirout+filename+'_ud'+str(nsideout)+'.fits',TQU)
