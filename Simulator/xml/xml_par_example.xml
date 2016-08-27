@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Mapmaking> 
+  <log> 
+    <runID>example</runID> 
+    <dir_simulator>/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2/LB_SYSPL_v4.2/Simulator/</dir_simulator> 
+    <debug>regular</debug> 
+    <machine>kekcc</machine> 
+    <silent>Y</silent> 
+  </log> 
+  
+  <basicpar> 
+    <nside>256</nside> 
+    <run_type>sim</run_type> 
+    <coord>E2G</coord> 
+    <pixelmapio>N</pixelmapio> 
+    <gen_tod>N</gen_tod> 
+    <TQU>TQU</TQU> 
+  </basicpar> 
+  
+  <simulations> 
+    <file_input_maps>/group/cmb/litebird/simdata/Maps/20131001_linux_711_LSM_new/processed_maps/140GHz/thermo/fits/cmb_map_band40_b32arcmin_ud512_thermo</file_input_maps> 
+    <file_input_noise>/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2/DB/sim_nonoise.txt</file_input_noise> 
+    <file_input_fpdb>/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2/DB//fp_db/LB_HFW_example_20160813.db</file_input_fpdb> 
+    <file_input_muellermatrix>/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2/DB/pb1_MuellerMatrix_default.db</file_input_muellermatrix> 
+  </simulations> 
+  
+  <database> 
+    <file_fpdb_mmin>/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2/DB//fp_db/LB_HFW_example_20160813.db</file_fpdb_mmin> 
+    <file_muellermatrix>/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2/DB/pb1_MuellerMatrix_default.db</file_muellermatrix> 
+    <db_ces>/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20131226_samplerate_SCANSPEC_1440min_65.0degs_93.0min_30.0degs_0.1rpm_365day_nside256_10Hz/ptg/LBPTG_latlon_eclip.db</db_ces> 
+    <db_ces2>/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v3.1/pyScans/dataout/LB_L2_20140205_samplerate_SCANSPEC_1440min_65.0degs_93.0min_55.0degs_0.1rpm_365day_nside256_10Hz/ptg/LBPTG_latlon_eclip.db</db_ces2> 
+    <db_gain>/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2/DB//gain_db/relgain_flat_bias_0.db</db_gain> 
+    <gain_type>ideal</gain_type> 
+  </database> 
+  
+ <filtering_choice> 
+    <filter_choice>poly</filter_choice> 
+    <poly>-1</poly> 
+ </filtering_choice> 
+  
+  <output_file> 
+    <dir_simedmap>/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2//SimedMaps/RunLog/example</dir_simedmap> 
+    <dir_combinedmap>/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2//SimedMaps/RunLog/example</dir_combinedmap> 
+    <Tn_map>map_Tn.fits</Tn_map> 
+    <Td_map>map_Td.fits</Td_map> 
+    <AA_map>map_AA.fits</AA_map> 
+    <BB_map>map_BB.fits</BB_map> 
+    <AB_map>map_AB.fits</AB_map> 
+    <Ad_map>map_Ad.fits</Ad_map> 
+    <Bd_map>map_Bd.fits</Bd_map> 
+  </output_file> 
+  
+  
+</Mapmaking> 
