@@ -7,7 +7,7 @@ import sys
 # define the basic directories in global_par.py
 
 dir_DB=g.dir_proj+'DB/'
-g_runID='20160818_140GHz_TQU_7'
+g_runID='20160828_example'
 
 #---------------------------------------------------------
 # set the batch run mode
