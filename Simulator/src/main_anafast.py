@@ -27,7 +27,7 @@ f_ana.write('nlmax = %d \n' % (xml_input['nside']*2))
 #f_ana.write('maskfile = %s \n' % (xml_input["dir_simedmap"]+'/coadd_map/'+name_extTOD+'/mapH.fits'))
 f_ana.close()
 
-os.system('bsub -q e -o '+fname_anafast+'.o'+' anafast -d '+fname_anafast+'.param')
+os.system('bsub -q s -o '+fname_anafast+'.o'+' anafast -d '+fname_anafast+'.param')
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -40,7 +40,7 @@ f_ana.write('simul_type = 1 \n')
 f_ana.write('nlmax = %d \n' % (xml_input['nside']*2))
 f_ana.close()
 
-os.system('bsub -q e -o '+fname_anafast+'.o'+' anafast -d '+fname_anafast+'.param')
+os.system('bsub -q s -o '+fname_anafast+'.o'+' anafast -d '+fname_anafast+'.param')
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -53,7 +53,7 @@ f_ana.write('simul_type = 1 \n')
 f_ana.write('nlmax = %d \n' % (xml_input['nside']*2))
 f_ana.close()
 
-os.system('bsub -q e -o '+fname_anafast+'.o'+' anafast -d '+fname_anafast+'.param')
+os.system('bsub -q s -o '+fname_anafast+'.o'+' anafast -d '+fname_anafast+'.param')
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -66,5 +66,5 @@ f_ana.write('simul_type = 2 \n')
 f_ana.write('nlmax = %d \n' % (xml_input['nside']*2))
 f_ana.close()
 
-os.system('bsub -q e -o '+fname_anafast+'.o'+' anafast -d '+fname_anafast+'.param')
+os.system('bsub -q s -o '+fname_anafast+'.o'+' anafast -d '+fname_anafast+'.param')
 

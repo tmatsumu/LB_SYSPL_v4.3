@@ -75,13 +75,15 @@ if (("sim_sidelobe" == xml_input['run_type']) | ("sim_diffsidelobe" == xml_input
 
 readDB.sq_command = sys.argv[3]
 readDB.filename = xml_input['file_input_fpdb']
+
 fpdb_simin = readDB.read_LBFPDB()
 
 readDB.sq_command = sys.argv[3]
 readDB.filename = xml_input['file_fpdb_mmin']
 fpdb_mmin = readDB.read_LBFPDB()
 
-bandpassmis_alpha_arr = lmm.read_bandpassmis_alpha_ascii(xml_input['file_input_bandpassmismatch'])
+if xml_input["TQU"] == 'T_bandpassmismatch':
+    bandpassmis_alpha_arr = lmm.read_bandpassmis_alpha_ascii(xml_input['file_input_bandpassmismatch'])
 #------------------------------------------------------------
 
 
@@ -131,8 +133,8 @@ if inputs['run_type'] != 'extTODmm':
     if xml_input["TQU"] != 'T_bandpassmismatch':
         inputs["SimInput"] = lmm.Read_SimMap(xml_input['file_input_maps']+'.fits', 
                                              xml_input["TQU"],
-                                             xml_input['silent'],
-                                             filename2=xml_input["file_input_maps2"]+'.fits')
+                                             xml_input['silent'])
+#                                             filename2=xml_input["file_input_maps2"]+'.fits')
     if ((xml_input["TQU"] == 'T_bandpassmismatch') | (xml_input["TQU"] == 'TQU_bandpassmismatch')):
         inputs["SimInput"] = lmm.Read_SimMap(xml_input['file_input_maps']+'.fits', 
                                              xml_input["TQU"],
@@ -149,7 +151,8 @@ if inputs['run_type'] == 'extTODmm':
 
 inputs["fpdb_list_simgen"] = fpdb_input4simin
 inputs["fpdb_list_mmin"] = fpdb_input4mm
-inputs["bandpassmis_alpha_arr"] = bandpassmis_alpha_arr
+if xml_input["TQU"] == 'T_bandpassmismatch':
+    inputs["bandpassmis_alpha_arr"] = bandpassmis_alpha_arr
 
 inputs["pix_list"] = pix_list 
 if 'poly' in xml_input['filter_choice']:

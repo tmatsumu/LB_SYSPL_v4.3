@@ -214,7 +214,7 @@ class readDB():
         conn = sq.connect(self.filename)
         c = conn.cursor()
 #        c.execute('select * from BeamParams')
-        c.execute(self.sq_command)
+        c.execute(self.sq_command+';')
         detid=[]; pixel=[]; xpos=[]; ypos=[]; polang=[]; wafer=[]; detname=[]; pair=[]
         for ar in c:
             detid.append(int(ar[0]))

@@ -7,7 +7,7 @@ import sys
 # define the basic directories in global_par.py
 
 dir_DB=g.dir_proj+'DB/'
-g_runID='20160828_example'
+g_runID='example_LB_SYSPL'
 
 #---------------------------------------------------------
 # set the batch run mode
@@ -78,7 +78,7 @@ dir_MMrunID=g.dir_proj+'/SimedMaps/RunLog/'+runID
 #file_flag_pixel=dir_DB+'/beamprm_20120530_031419_hwp112.5.db_simin_flag.db'
 db_gain=dir_DB+'/gain_db/relgain_flat_bias_0.db'
 gain_type='ideal'
-db_ces='/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20131226_samplerate_SCANSPEC_1440min_65.0degs_93.0min_30.0degs_0.1rpm_365day_nside256_10Hz/ptg/LBPTG_latlon_eclip.db'
+db_ces='/group/cmb/litebird/simdata/Scans/dataout/LB_L2_20131226_samplerate_SCANSPEC_1440min_65.0degs_95.0min_30.0degs_0.1rpm_365day_nside256_10Hz/ptg/LBPTG_latlon_eclip.db'
 db_ces2='/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v3.1/pyScans/dataout/LB_L2_20140205_samplerate_SCANSPEC_1440min_65.0degs_93.0min_55.0degs_0.1rpm_365day_nside256_10Hz/ptg/LBPTG_latlon_eclip.db'
 # </data_selection>
 

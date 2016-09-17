@@ -1,1 +1,1 @@
-/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v4.2/Simulator//src/lib_mapmaker.py
+/Users/tomotake_matsumura/Documents/Projects/LiteBIRD/20160827_LBSYSPLv4.2/LB_SYSPL_v4.2/Simulator//src/lib_mapmaker.py

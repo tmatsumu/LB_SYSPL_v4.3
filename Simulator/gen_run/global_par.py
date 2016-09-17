@@ -1,5 +1,5 @@
 import sys
-dir_simulator="/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v4.2/Simulator/"
+dir_simulator="/home/cmb/tmatsumu/LB_SYSPL/LB_SYSPL_v4.2/Simulator/"
 dir_proj="/group/cmb/litebird/usr/tmatsumu/LB_SYSPL_v4.2/"
 dir_db="/group/cmb/litebird/usr/tmatsumu/LB_SYSPL_v4.2/DB"
 if sys.argv[1] == "dir_simulator": print dir_simulator

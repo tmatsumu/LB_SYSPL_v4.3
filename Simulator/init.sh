@@ -1,6 +1,7 @@
 #!/bin/sh
 
-dir_simulator=/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v4.2/Simulator/
+dir_simulator=$HOME/LB_SYSPL/LB_SYSPL_v4.2/Simulator/
+#dir_simulator=/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v4.2/Simulator/
 dir_proj=/group/cmb/litebird/usr/tmatsumu/LB_SYSPL_v4.2/
 dir_db=${dir_proj}DB
 
@@ -28,6 +29,7 @@ if [[ $1 = "help" ]];then
     echo '   revised by TM on 2013-12-20 specifically for kekcc usage'    
     echo '   revised by TM on 2013-12-28 specifically for kekcc usage'    
     echo '   revised by TM on 2014-10-2 specifically for kekcc usage' 
+    echo '   revised by TM on 2016-9-16 modification for LB_SYSPL_v4.2'
     echo ''
     echo 'The following instruction is generally ONE TIME ONLY action right after checking out LB_SYSPL_v*.* from the svn/git repository'
     echo ''
@@ -83,13 +85,11 @@ if [[ $1 = "mkdir" ]];then
 fi
 
 if [[ $1 = "cp_db" ]];then
-    dir_share=/home/cmb/tmatsumu/group_lb/simdata
-#    cp $dir_share/DB/fp_db/LB_HFW_example_v2.db ${dir_proj}DB/fp_db
-#    cp $dir_share/DB/gain_db/relgain_flat_bias_0.db ${dir_proj}DB/gain_db
+    dir_share=/group/cmb/litebird/simdata
     cp $dir_share/DB/fp_db/* ${dir_proj}/DB/fp_db
     cp $dir_share/DB/gain_db/* ${dir_proj}/DB/gain_db
     cp $dir_share/DB/obs_db/LB_L2_20131212_samplerate_SCANSPEC_1440min_65.0degs_90.0min_30.0degs_0.1rpm_365day_nside256_10Hz.db ${dir_proj}/DB/obs_db
-    cp /group/cmb/litebird/simdata/clin/reference/standard_lensedtotCls.txt ${dir_proj}/clin
+    cp $dir_share/clin/reference/standard_lensedtotCls.txt ${dir_proj}/clin
     echo ""
     echo "DONE cp_db"
     echo ""

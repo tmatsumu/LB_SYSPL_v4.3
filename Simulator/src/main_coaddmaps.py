@@ -82,7 +82,7 @@ class generate_coadd_PBS_SH():
             f_sh = open(dir_gen+'/BSUB_'+runID+'_'+self.dir_coadds[0]+'.sh', 'w')
             if machine=="kekcc":
                 f_sh.write('%s\n' % ('#!/bin/bash'))
-                f_sh.write('%s\n' % ('bsub -q e -o '+dir_gen+'/SH_'+runID+'_'+self.dir_coadds[0]+'.o '+dir_gen+'/SH_'+runID+'_'+self.dir_coadds[0]+'.sh'))
+                f_sh.write('%s\n' % ('bsub -q s -o '+dir_gen+'/SH_'+runID+'_'+self.dir_coadds[0]+'.o '+dir_gen+'/SH_'+runID+'_'+self.dir_coadds[0]+'.sh'))
                 f_sh.write('%s\n' % ('wait'))
 #                f_sh.write('%s\n' % ('bsub -q e -o '+dir_gen+'/SH_'+runID+'_'+self.dir_coadds[0]+'_TQU.o '+dir_gen+'/SH_'+runID+'_'+self.dir_coadds[0]+'_TQU.sh'))
 #                f_sh.write('%s\n' % ('rm -f '+self.outdirs+'/coadd_map/'+self.dir_coadds+'/*.npy'))
