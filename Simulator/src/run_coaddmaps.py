@@ -1,7 +1,11 @@
 import numpy as np
 import fileinput
 import sys
-import pylab as py
+#import pylab as py
+import matplotlib
+matplotlib.use('pdf')
+import matplotlib.pyplot as py
+
 import healpy as h
 import lib_mapmaker as lmm
 import sqlite3 as sq
@@ -237,35 +241,35 @@ class coadd():
             h.write_map(self.fnameA+'_CNexcluded.fits',mapA_s)
             h.mollview(mapA_s, title='mapA_s',max=max(mapA_s),min=min(mapA_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapA_s.png')
-            h.mollview(mapA_s/np.float(mapH_s), title='mapA_s/H',max=max(mapA_s/np.float(mapH_s)),min=min(mapA_s/np.float(mapH_s)))
+            h.mollview(mapA_s/np.float_(mapH_s), title='mapA_s/H',max=max(mapA_s/np.float_(mapH_s)),min=min(mapA_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapA_s_normH.png')
 
             np.save(self.fnameB+'_CNexcluded',mapB_s)
             h.write_map(self.fnameB+'_CNexcluded.fits',mapB_s)
             h.mollview(mapB_s, title='mapB_s',max=max(mapB_s),min=min(mapB_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapB_s.png')
-            h.mollview(mapB_s/np.float(mapH_s), title='mapB_s/H',max=max(mapB_s/np.float(mapH_s)),min=min(mapB_s/np.float(mapH_s)))
+            h.mollview(mapB_s/np.float_(mapH_s), title='mapB_s/H',max=max(mapB_s/np.float_(mapH_s)),min=min(mapB_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapB_s_normH.png')
 
             np.save(self.fnameAA+'_CNexcluded',mapAA_s)
             h.write_map(self.fnameAA+'_CNexcluded.fits',mapAA_s)
             h.mollview(mapAA_s, title='mapAA_s',max=max(mapAA_s),min=min(mapAA_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapAA_s.png')
-            h.mollview(mapAA_s/np.float(mapH_s), title='mapAA_s/H',max=max(mapAA_s/np.float(mapH_s)),min=min(mapAA_s/np.float(mapH_s)))
+            h.mollview(mapAA_s/np.float_(mapH_s), title='mapAA_s/H',max=max(mapAA_s/np.float_(mapH_s)),min=min(mapAA_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapAA_s_normH.png')
 
             np.save(self.fnameBB+'_CNexcluded',mapBB_s)
             h.write_map(self.fnameBB+'_CNexcluded.fits',mapBB_s)
             h.mollview(mapBB_s, title='mapBB_s',max=max(mapBB_s),min=min(mapBB_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapBB_s.png')
-            h.mollview(mapBB_s/np.float(mapH_s), title='mapBB_s/H',max=max(mapBB_s/np.float(mapH_s)),min=min(mapBB_s/np.float(mapH_s)))
+            h.mollview(mapBB_s/np.float_(mapH_s), title='mapBB_s/H',max=max(mapBB_s/np.float_(mapH_s)),min=min(mapBB_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapBB_s_normH.png')
 
             np.save(self.fnameAB+'_CNexcluded',mapAB_s)
             h.write_map(self.fnameAB+'_CNexcluded.fits',mapAB_s)
             h.mollview(mapAB_s, title='mapAB_s',max=max(mapAB_s),min=min(mapAB_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapAB_s.png')
-            h.mollview(mapAB_s/np.float(mapH_s), title='mapAB_s/H',max=max(mapAB_s/np.float(mapH_s)),min=min(mapAB_s/np.float(mapH_s)))
+            h.mollview(mapAB_s/np.float_(mapH_s), title='mapAB_s/H',max=max(mapAB_s/np.float_(mapH_s)),min=min(mapAB_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapAB_s_normH.png')
 
             np.save(self.fnameAd+'_CNexcluded',mapAd_s)
@@ -320,35 +324,35 @@ class coadd():
             h.write_map(self.fnameA+'_CNexcluded.fits',mapA_s)
             h.mollview(mapA_s, title='mapA_s',max=max(mapA_s),min=min(mapA_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapA_s.png')
-            h.mollview(mapA_s/np.float(mapH_s), title='mapA_s/H',max=max(mapA_s/np.float(mapH_s)),min=min(mapA_s/np.float(mapH_s)))
+            h.mollview(mapA_s/np.float_(mapH_s), title='mapA_s/H',max=max(mapA_s/np.float_(mapH_s)),min=min(mapA_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapA_s_normH.png')
 
             np.save(self.fnameB+'_CNexcluded',mapB_s)
             h.write_map(self.fnameB+'_CNexcluded.fits',mapB_s)
             h.mollview(mapB_s, title='mapB_s',max=max(mapB_s),min=min(mapB_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapB_s.png')
-            h.mollview(mapB_s/np.float(mapH_s), title='mapB_s/H',max=max(mapB_s/np.float(mapH_s)),min=min(mapB_s/np.float(mapH_s)))
+            h.mollview(mapB_s/np.float_(mapH_s), title='mapB_s/H',max=max(mapB_s/np.float_(mapH_s)),min=min(mapB_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapB_s_normH.png')
 
             np.save(self.fnameAA+'_CNexcluded',mapAA_s)
             h.write_map(self.fnameAA+'_CNexcluded.fits',mapAA_s)
             h.mollview(mapAA_s, title='mapAA_s',max=max(mapAA_s),min=min(mapAA_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapAA_s.png')
-            h.mollview(mapAA_s/np.float(mapH_s), title='mapAA_s/H',max=max(mapAA_s/np.float(mapH_s)),min=min(mapAA_s/np.float(mapH_s)))
+            h.mollview(mapAA_s/np.float_(mapH_s), title='mapAA_s/H',max=max(mapAA_s/np.float_(mapH_s)),min=min(mapAA_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapAA_s_normH.png')
 
             np.save(self.fnameBB+'_CNexcluded',mapBB_s)
             h.write_map(self.fnameBB+'_CNexcluded.fits',mapBB_s)
             h.mollview(mapBB_s, title='mapBB_s',max=max(mapBB_s),min=min(mapBB_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapBB_s.png')
-            h.mollview(mapBB_s/np.float(mapH_s), title='mapBB_s/H',max=max(mapBB_s/np.float(mapH_s)),min=min(mapBB_s/np.float(mapH_s)))
+            h.mollview(mapBB_s/np.float_(mapH_s), title='mapBB_s/H',max=max(mapBB_s/np.float_(mapH_s)),min=min(mapBB_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapBB_s_normH.png')
 
             np.save(self.fnameAB+'_CNexcluded',mapAB_s)
             h.write_map(self.fnameAB+'_CNexcluded.fits',mapAB_s)
             h.mollview(mapAB_s, title='mapAB_s',max=max(mapAB_s),min=min(mapAB_s))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapAB_s.png')
-            h.mollview(mapAB_s/np.float(mapH_s), title='mapAB_s/H',max=max(mapAB_s/np.float(mapH_s)),min=min(mapAB_s/np.float(mapH_s)))
+            h.mollview(mapAB_s/np.float_(mapH_s), title='mapAB_s/H',max=max(mapAB_s/np.float_(mapH_s)),min=min(mapAB_s/np.float_(mapH_s)))
             py.savefig(out_dir+'/png/'+dir_coadd+'/mapAB_s_normH.png')
 
             np.save(self.fnameAd+'_CNexcluded',mapAd_s)
