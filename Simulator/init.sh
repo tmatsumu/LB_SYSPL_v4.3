@@ -1,7 +1,6 @@
 #!/bin/sh
 
 dir_simulator=$HOME/LB_SYSPL/LB_SYSPL_v4.2/Simulator/
-#dir_simulator=/home/cmb/tmatsumu/develop/LiteBIRD/projects/LB_SYSPL_v4.2/Simulator/
 dir_proj=/group/cmb/litebird/usr/tmatsumu/LB_SYSPL_v4.2/
 dir_db=${dir_proj}DB
 
