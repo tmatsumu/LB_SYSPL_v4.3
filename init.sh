@@ -17,7 +17,7 @@ LB_SYSPL_version=LB_SYSPL_v4.3
 #   - dir_ptg should be left as it is. The LiteBIRD pointing is read from the shared simulated data directory
 #   - dir_mapin should be left as it is with the same reason as dir_ptg.
 
-dir_simulator=/home/cmb/tmatsumu/develop/LiteBIRD/projects/${LB_SYSPL_version}
+dir_simulator=$HOME/LB_SYSPL/${LB_SYSPL_version}
 dir_proj=/group/cmb/litebird/usr/tmatsumu/${LB_SYSPL_version}
 dir_ptg=/group/cmb/litebird/simdata/Scans/dataout
 dir_mapin=/group/cmb/litebird/simdata/Maps/CMB
