@@ -22,6 +22,7 @@ def npojt2dict(fname):
     outputs['muellermatrix']=inputs[()]["muellermatrix"]
     outputs['relgain']=inputs[()]["relgain"]
     outputs['gain_type']=inputs[()]["gain_type"]
+    outputs['gain_corr']=inputs[()]["gain_corr"]
     outputs['silent']=inputs[()]["silent"]
     outputs['pixelmapio']=inputs[()]["pixelmapio"]
     outputs['gen_tod']=inputs[()]["gen_tod"]

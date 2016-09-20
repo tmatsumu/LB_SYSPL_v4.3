@@ -211,6 +211,7 @@ gain_cl = lib_g.gen_gain4mm()
 gain_cl.sqlite_command = 'select * from GainParams;'
 gain_cl.filename = xml_input['db_gain']
 gain_cl.gain_type = xml_input['gain_type']
+gain_cl.gain_corr = xml_input['gain_corr']
 gain_cl.pix_list = pix_list
 gain_in = gain_cl.prep_relgain4mm(subscan_total,1./(subscan_interval_julian*3600.*24.))
 
@@ -232,6 +233,7 @@ for i_scanset in range(0,nb_scanset):
 #    print 'gain'
 #    print gain_in[:,i_subscan:f_subscan]
     inputs["gain_type"] = xml_input['gain_type']
+    inputs["gain_corr"] = xml_input['gain_corr']
     inputs["out_dir"] = xml_input["dir_simedmap"]+"/day"+str(i_scanset)+"/"
     os.popen("mkdir -p "+inputs["out_dir"])
     inputs["out_dir_ptg"] = xml_input["dir_simedmap"]

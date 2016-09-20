@@ -96,8 +96,9 @@ def readxml_database(node):
             if child.tagName == 'db_ces2': db_ces2 = getText(child)
             if child.tagName == 'db_gain': db_gain = getText(child)
             if child.tagName == 'gain_type': gain_type = getText(child)
+            if child.tagName == 'gain_corr': gain_corr = getText(child)
 #    return file_fpdb_mmin, file_muellermatrix, file_relgain, file_boloid, file_flag_pixel, db_ces, db_ces2, db_gain, gain_type
-    return file_fpdb_mmin, file_muellermatrix, db_ces, db_ces2, db_gain, gain_type
+    return file_fpdb_mmin, file_muellermatrix, db_ces, db_ces2, db_gain, gain_type, gain_corr
 # </database>
 
 # <filetering_choice>
@@ -149,7 +150,7 @@ def Get_Mapmake_Inputs(filename):
         if TQU=='T_bandpassmismatch':
             file_input_maps, file_input_noise, file_input_fpdb, file_input_muellermatrix, file_input_dust, file_input_synch, file_input_bandpassmismatch  = readxml_simulations(node, TQU)
     for node in doc.getElementsByTagName('database'):
-        file_fpdb_mmin, file_muellermatrix, db_ces, db_ces2, db_gain, gain_type = readxml_database(node)
+        file_fpdb_mmin, file_muellermatrix, db_ces, db_ces2, db_gain, gain_type, gain_corr = readxml_database(node)
 #        file_fpdb_mmin, file_muellermatrix, file_relgain, file_boloid, file_flag_pixel, db_ces, db_ces2, db_gain, gain_type = readxml_database(node)
     for node in doc.getElementsByTagName('filtering_choice'):
         filter_choice, poly = readxml_filtering_choice(node)
@@ -178,6 +179,7 @@ def Get_Mapmake_Inputs(filename):
                'db_ces2':db_ces2,
                'db_gain':db_gain,
                'gain_type':gain_type,
+               'gain_corr':gain_corr,
                'dir_simedmap':dir_simedmap, 
                'dir_combinedmap':dir_combinedmap, 
                'fname_Tn':Td, 'fname_Td':Td, 
@@ -206,6 +208,7 @@ def Get_Mapmake_Inputs(filename):
                'db_ces2':db_ces2,
                'db_gain':db_gain,
                'gain_type':gain_type,
+               'gain_corr':gain_corr,
                'dir_simedmap':dir_simedmap, 
                'dir_combinedmap':dir_combinedmap, 
                'fname_Tn':Td, 'fname_Td':Td, 
@@ -230,16 +233,13 @@ def Get_Mapmake_Inputs(filename):
                'TQU':TQU,
                'file_fpdb_mmin':file_fpdb_mmin,
                'file_muellermatrix':file_muellermatrix,
-               #           'file_relgain':file_relgain,
-               #           'file_boloid':file_boloid,
                'filter_choice': filter_choice,
                'poly':poly,
-               #           'file_noisefft':file_noisefft,
-               #           'file_flag_pixel':file_flag_pixel,
                'db_ces':db_ces,
                'db_ces2':db_ces2,
                'db_gain':db_gain,
                'gain_type':gain_type,
+               'gain_corr':gain_corr,
                'dir_simedmap':dir_simedmap, 
                'dir_combinedmap':dir_combinedmap, 
                'fname_Tn':Td, 'fname_Td':Td, 

@@ -2345,11 +2345,12 @@ def main_simulator(inputs):
     poly_n = inputs["poly"]
     relgain = inputs["relgain"]
     gain_type = inputs["gain_type"]
+    gain_corr = inputs["gain_corr"]
 
     nsideout = inputs["nside"]
     npix = h.nside2npix(nsideout)
 
-    if gain_type == 'dipole':
+    if gain_corr == 'dipole':
        dipole = gen_dipole(nsideout,'uK')
 
     top_ptg = {}

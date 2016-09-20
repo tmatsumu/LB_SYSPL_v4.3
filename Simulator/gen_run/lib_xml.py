@@ -71,6 +71,7 @@ def write_xml(fname,p):
 #    write_txt(fname,'    <sqlite_command_ces>'+p.sqlite_command_ces+'</sqlite_command_ces>')
     write_txt(fname,'    <db_gain>'+p.db_gain+'</db_gain>')
     write_txt(fname,'    <gain_type>'+p.gain_type+'</gain_type>')
+    write_txt(fname,'    <gain_corr>'+p.gain_type+'</gain_corr>')
 #    write_txt(fname,'    <db_HWPangles>'+p.db_ces+'</db_HWPangles>')
 #    write_txt(fname,'    <RorL>'+p.db_ces+'</RorL>')
     write_txt(fname,'  </database>')

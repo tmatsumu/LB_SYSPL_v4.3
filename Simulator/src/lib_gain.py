@@ -12,6 +12,7 @@ class gen_gain4mm():
         self.sqlite_command = '.schema'
         self.filename = './tmp'
         self.gain_type = 'sim'
+        self.gain_corr = 'sim'
         self.boloid = np.zeros(1)
         self.pix_list = pix_list
         self.num_det = 1
