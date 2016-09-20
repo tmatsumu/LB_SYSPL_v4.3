@@ -80,14 +80,14 @@ class gen_gain4mm():
 #                                        int(np.random.uniform(1e-10,1e10,1)))
 #                gain_out[i][:] = 1. + tmp
 
-            if 'bias' in gain_in['gain_type'][i]:
+            if 'bias' in self.gain_type: #gain_in['gain_type'][i]:
                 gain_out[i][:] = 1.+ np.ones(num_subscan)*gain_in['params1'][i]
-            if 'random_r' in gain_in['gain_type'][i]:
+            if 'random_r' in self.gain_type: #gain_in['gain_type'][i]:
                 gain_out[i][:] = 1.+ np.random.normal(0.,1.,num_subscan)*gain_in['params1'][i]
-            if 'random_c' in gain_in['gain_type'][i]:
+            if 'random_c' in self.gain_type: #gain_in['gain_type'][i]:
                 np.random.seed(seed)
                 gain_out[i][:] = 1.+ np.random.normal(0.,1.,num_subscan)*gain_in['params1'][i]
-            if '1of_r' in gain_in['gain_type'][i]:
+            if '1of_r' in self.gain_type: #gain_in['gain_type'][i]:
                 tmp = NoiseGen_auto(num_subscan,fsample, \
                                         np.array(gain_in['params1'][i]), \
                                         np.array(gain_in['params2'][i]), \
@@ -95,7 +95,7 @@ class gen_gain4mm():
                                         int(np.random.uniform(1e-10,1e10,1)), \
                                         2)
                 gain_out[i][:] = 1. + tmp
-            if '1of_c' in gain_in['gain_type'][i]:
+            if '1of_c' in self.gain_type: #gain_in['gain_type'][i]:
                 np.random.seed(seed)
                 tmp = NoiseGen_auto(num_subscan,fsample, \
                                         np.array(gain_in['params1'][i]), \

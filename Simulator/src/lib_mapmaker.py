@@ -2396,11 +2396,13 @@ def main_simulator(inputs):
             scan_flag = np.ones(len(s_idx),dtype='int')
             hscan_idx = np.where(scan_flag == 1)
 
-            if ((option_TQU != 'T_bandpassmismatch') & (option_TQU != 'derivT') & (inputs['run_type'] == 'sim')):
+            if (((option_TQU == 'TQU') | (option_TQU == 'T') | (option_TQU == 'TQU2') | (option_TQU == 'T2')) & (inputs['run_type'] == 'sim')):
                 top_tod, bot_tod = SignalGen(i_pix, pix_list, top_ptg_in, bot_ptg_in, hwpang, SimInputs, MuellerMatrix,0, option_TQU, option_silent)
+#            if ((option_TQU != 'T_bandpassmismatch') & (option_TQU != 'derivT') & (inputs['run_type'] == 'sim')):
+#                top_tod, bot_tod = SignalGen(i_pix, pix_list, top_ptg_in, bot_ptg_in, hwpang, SimInputs, MuellerMatrix,0, option_TQU, option_silent)
             if ((option_TQU == 'derivT') & (inputs['run_type'] == 'sim')):
                 top_tod, bot_tod = SignalGen_diffptg(i_pix, pix_list, top_ptg_in, bot_ptg_in, hwpang, SimInputs, MuellerMatrix,0, option_silent)
-            if (gain_type == 'dipole'):
+            if (gain_corr == 'dipole'):
                 top_dipole, bot_dipole = SignalGen_dipole(i_pix, pix_list, top_ptg_in, bot_ptg_in, hwpang, dipole, MuellerMatrix, 0, option_silent)
             if ((inputs['run_type'] == 'sim_sidelobe') | (inputs['run_type'] == 'sim_diffsidelobe')):
                 top_tod, bot_tod = SignalGen_sidelobe(i_pix, pix_list, top_ptg_in, bot_ptg_in, top_ptg_in2, bot_ptg_in2, hwpang, SimInputs, MuellerMatrix,0, option_TQU, inputs['run_type'], option_silent)
@@ -2454,8 +2456,8 @@ def main_simulator(inputs):
 
             top_dat = (relgain[pix_list[i_pix][0],i_hscan])*top_tod[i_tod]
             bot_dat = (relgain[pix_list[i_pix][1],i_hscan])*bot_tod[i_tod]
-
-            if gain_type == 'dipole':
+            
+            if gain_corr == 'dipole':
                 top_dipole_dat = top_dipole[i_tod]
                 bot_dipole_dat = bot_dipole[i_tod]
                 top_dat, bot_dat = lib_module.dipole_gain_anafit(top_dat, bot_dat, top_dipole_dat, bot_dipole_dat)

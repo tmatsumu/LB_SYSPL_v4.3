@@ -230,8 +230,6 @@ for i_scanset in range(0,nb_scanset):
             ptg_package2 = lmm.read_LBptg(CES2['dir_ptg'][i_scanset]+'.npz') 
             
     inputs["relgain"] = gain_in[:,i_subscan:f_subscan]
-#    print 'gain'
-#    print gain_in[:,i_subscan:f_subscan]
     inputs["gain_type"] = xml_input['gain_type']
     inputs["gain_corr"] = xml_input['gain_corr']
     inputs["out_dir"] = xml_input["dir_simedmap"]+"/day"+str(i_scanset)+"/"
