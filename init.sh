@@ -8,7 +8,7 @@ echo '=============================================='
 echo ''
 
 # change this to your version name
-LB_SYSPL_version=LB_SYSPL_v4.2
+LB_SYSPL_version=LB_SYSPL_v4.3
 
 # change the following directory names
 #   - dir_mm should be your working directory

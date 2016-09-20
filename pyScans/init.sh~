@@ -14,7 +14,7 @@ echo ' and symbolic link to the pointing data'
 echo '##############################'
 echo ''
 
-dir_LBSYSver=/home/cmb/tmatsumu/LB_SYSPL/LB_SYSPL_v4.3/
+dir_LBSYSver=/home/cmb/tmatsumu/LB_SYSPL/LB_SYSPL_v4.2/
 dir_data=/group/cmb/litebird/simdata/Scans/dataout/
 
 if [[ $1 = "help" ]];then

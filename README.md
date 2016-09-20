@@ -1,5 +1,8 @@
-README for LB_SYSPL_v4.2
-       written by T. Matsumura, 2016-8-27
+README for LB_SYSPL_v4.3
+       written by T. Matsumura, 2016-9-20
+
+0) What's new?
+   The codes in Simulator now have an update about the gain simulation.
 
 1) About
 This set of codes is to study the systematic effects for LiteBIRD. 
@@ -17,7 +20,7 @@ The systematic effects which the code can study is
    f) naive sidelobe and ghost
 
 2) How to download this file
-> git clone https://github.com/tmatsumu/LB_SYSPL_v4.2.git
+> git clone https://github.com/tmatsumu/LB_SYSPL_v4.3.git
 
 3) Codes
 This directory contains the two softwares,
