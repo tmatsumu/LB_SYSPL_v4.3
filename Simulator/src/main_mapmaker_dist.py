@@ -1,4 +1,5 @@
 import numpy as np
+import pylab as py
 import healpy as h
 import math as m
 from numpy import fft
@@ -129,12 +130,10 @@ inputs["muellermatrix"] = shuffle.gen_muellermatrix(muellermatrix)
 
 if inputs['run_type'] != 'extTODmm':
     print 'file input maps:  ', xml_input['file_input_maps']+'.fits'
-#    print 'file input maps2: ', xml_input['file_input_maps2']+'.fits'
     if xml_input["TQU"] != 'T_bandpassmismatch':
         inputs["SimInput"] = lmm.Read_SimMap(xml_input['file_input_maps']+'.fits', 
                                              xml_input["TQU"],
                                              xml_input['silent'])
-#                                             filename2=xml_input["file_input_maps2"]+'.fits')
     if ((xml_input["TQU"] == 'T_bandpassmismatch') | (xml_input["TQU"] == 'TQU_bandpassmismatch')):
         inputs["SimInput"] = lmm.Read_SimMap(xml_input['file_input_maps']+'.fits', 
                                              xml_input["TQU"],
@@ -202,11 +201,7 @@ for i_scanset in range(0,nb_scanset):
             ptg_idx = lmm.read_LBptg_idx(CES['dir_ptg'][i_scanset]+'.db')
             subscan_total += len(ptg_idx['s_idx'])
             subscan_interval_julian = ptg_idx['subscan_interval']
-#            print '->', len(ptg_idx['s_idx']), ptg_idx['s_idx']
-#print ''
-#print xml_input['gain_type']
 
-#if xml_input['db_gain'] == 'db':
 gain_cl = lib_g.gen_gain4mm()
 gain_cl.sqlite_command = 'select * from GainParams;'
 gain_cl.filename = xml_input['db_gain']
@@ -214,6 +209,16 @@ gain_cl.gain_type = xml_input['gain_type']
 gain_cl.gain_corr = xml_input['gain_corr']
 gain_cl.pix_list = pix_list
 gain_in = gain_cl.prep_relgain4mm(subscan_total,1./(subscan_interval_julian*3600.*24.))
+if ((xml_input['gain_type'] == '1of_r') | (xml_input['gain_type'] == '1of_c')):
+    py.subplot(211)
+    py.plot(gain_in[0][:])
+    py.ylabel('1+$\delta g_a$')
+    py.subplot(212)
+    py.plot(gain_in[1][:])
+    py.ylabel('1+$\delta g_b$')
+    py.xlabel('Sample per spin period over a day')
+    py.savefig(xml_input["dir_simedmap"]+'/gain_1of.png')
+    py.clf()
 
 file_inputnpy_arr = []
 i_subscan = 0
@@ -247,14 +252,12 @@ for i_scanset in range(0,nb_scanset):
     i_subscan += len(ptg_idx['s_idx'])
 
 gen_qsub_mm = lqsub.gen_qsub()
-#gen_qsub_mm.i_scanset = nb_scanset
 gen_qsub_mm.file_inputnpy = file_inputnpy_arr #+'.npy'
 gen_qsub_mm.dir_simulator = xml_input['dir_simulator']
 gen_qsub_mm.runID = xml_input['runID']
 gen_qsub_mm.dir_out = xml_input['dir_simedmap']
 gen_qsub_mm.mode = xml_input['debug']
 gen_qsub_mm.machine = xml_input['machine']
-#out_qsub = gen_qsub_mm.gen_qsub_mm(int(xml_input['core']),int(xml_input['cpu']))
 out_qsub = gen_qsub_mm.gen_qsub_mm()
 
 print '[main_mapmaker_dist.py]: Run mode', xml_input['debug']
@@ -265,10 +268,6 @@ for qsub_file in out_qsub:
         print ""
         print "========================================================================"
         print "= Submit qsub "
-#        print "qsub "+xml_input['dir_simulator']+"/RunJob/"+xml_input['runID']+"/"+qsub_file
-#        os.popen("qsub "+xml_input['dir_simulator']+"/RunJob/"+xml_input['runID']+"/"+qsub_file)
-#        print "./"+xml_input['dir_simulator']+"/RunJob/"+xml_input['runID']+"/"+qsub_file
-#        print qsub_file
         os.popen(qsub_file)
         print "========================================================================"
         print ""

@@ -92,7 +92,7 @@ class gen_gain4mm():
                                         np.array(gain_in['params1'][i]), \
                                         np.array(gain_in['params2'][i]), \
                                         np.array(gain_in['params3'][i]), \
-                                        int(np.random.uniform(1e-10,1e10,1)), \
+                                        int(np.random.uniform(0,2**32-1,1)), \
                                         2)
                 gain_out[i][:] = 1. + tmp
             if '1of_c' in self.gain_type: #gain_in['gain_type'][i]:
@@ -101,7 +101,7 @@ class gen_gain4mm():
                                         np.array(gain_in['params1'][i]), \
                                         np.array(gain_in['params2'][i]), \
                                         np.array(gain_in['params3'][i]), \
-                                        int(np.random.uniform(1e-10,1e10,1)), \
+                                        int(np.random.uniform(0,2**32-1,1)), \
                                         2)
                 gain_out[i][:] = 1. + tmp
 
@@ -137,7 +137,7 @@ def NoiseGen_auto(nbData,fsample,net,fknee,power,seed,model):
     idx = range(1,nbf-1) #                                                                                  
     real_psd = np.concatenate(( psd[idx], np.array([psd[nbf-1]]), psd[idx[::-1]] ))
     real_psd = np.hstack([0,real_psd])
-    
+
     np.random.seed(seed)
     f_rand = np.random.uniform(low=0.0, high=2.*pi, size=nbData)
     real_psdout = real_psd*np.cos(f_rand)
