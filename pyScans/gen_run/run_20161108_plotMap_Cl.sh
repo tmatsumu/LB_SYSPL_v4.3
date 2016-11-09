@@ -1,0 +1,35 @@
+#!/bin/sh
+
+dir_in=/home/cmb/tmatsumu/LB_SYSPL/LB_SYSPL_v4.3/pyScans/
+dir_src=$dir_in/src/
+dir_data=$dir_in/dataout/
+#filename=LB_L2_20160919_LB2_samplerate_SCANSPEC_1440min_65.0degs_93.0min_30.0degs_0.1rpm_365day_nside256_10Hz
+#filename=LB_L2_20160919_Wallis_MediumLissajous_samplerate_SCANSPEC_1440min_50.0degs_93.0min_45.0degs_0.1rpm_365day_nside256_10Hz
+#filename=LB_L2_20160919_Wallis_LargeLissajous_samplerate_SCANSPEC_1440min_38.0degs_93.0min_57.0degs_0.1rpm_365day_nside256_10Hz
+#filename=LB_L2_20160919_Wallis_MediumLissajous2_samplerate_SCANSPEC_1440min_50.0degs_93.0min_50.0degs_0.1rpm_365day_nside256_10Hz
+#filename=LB_L2_20160919_Wallis_SmallLissajous_samplerate_SCANSPEC_1440min_56.0degs_93.0min_39.0degs_0.1rpm_365day_nside256_10Hz
+#filename=LB_L2_20161031_Wallis_SmallLissajous_samplerate_SCANSPEC_1440min_45.0degs_93.0min_50.0degs_0.1rpm_365day_nside256_10Hz
+
+##filename=LB_L2_20161108_example_samplerate_SCANSPEC_1440min_65.0degs_93.0min_30.0degs_0.3rpm_365day_nside256_10Hz
+##filename=LB_L2_20161108_example2_samplerate_SCANSPEC_1440min_65.0degs_93.0min_30.0degs_0.1rpm_365day_nside256_20Hz
+#filename=LB_L2_20161108_Wallis_LargeLissajous_30arcmin_samplerate_SCANSPEC_1440min_38.0degs_900.0min_57.0degs_0.361rpm_365day_nside256_15Hz
+#filename=LB_L2_20161108_WMAP_30arcmin_samplerate_SCANSPEC_1440min_22.5degs_60.0min_70.0degs_0.465rpm_365day_nside256_21Hz
+#filename=LB_L2_20161108_Wallis_Medium_Lissajous_30arcmin_samplerate_SCANSPEC_1440min_50.0degs_2400.0min_45.0degs_0.423rpm_365day_nside256_15Hz
+#filename=LB_L2_20161108_Wallis_Small_Lissajous_30arcmin_samplerate_SCANSPEC_1440min_56.0degs_7800.0min_39.0degs_0.48rpm_365day_nside256_15Hz
+#filename=LB_L2_20161108_Wallis_Medium_Lissajous2_30arcmin_samplerate_SCANSPEC_1440min_50.0degs_2400.0min_50.0degs_0.423rpm_365day_nside256_15Hz
+#filename=LB_L2_20161108_EPIC_30arcmin_samplerate_SCANSPEC_1440min_45.0degs_180.0min_50.0degs_1.0rpm_365day_nside256_37Hz
+#filename=LB_L2_20161108_Planck_30arcmin_samplerate_SCANSPEC_1440min_7.5degs_259200.0min_85.0degs_1.0rpm_365day_nside256_48Hz
+##filename=LB_L2_20161108_Wallis_SmallLissajous_samplerate_SCANSPEC_1440min_65.0degs_1440.0min_30.0degs_0.1rpm_365day_nside256_10Hz
+
+
+sub_dir=$filename
+
+max=1000
+min=0
+
+python $dir_src/main_plotMollviewMap_from_fits.py $dir_data/$sub_dir/ps ${filename}_nhits $max $min
+python $dir_src/main_plotAnafastCls_1rawfits.py $dir_data/$sub_dir/ps cl_out 0 
+
+#display  $dir_data/$sub_dir/ps/${filename}_nhits.png &
+#display  $dir_data/$sub_dir/ps/cl_out.png &
+
