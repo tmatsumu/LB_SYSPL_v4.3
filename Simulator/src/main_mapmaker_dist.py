@@ -193,14 +193,22 @@ print ""
 # AND
 # GENERATE THE QSUB SCRIPT FOR EACH CES/PIX
 lmm.info('########### Parent Process ID ############', runtime_init)
+
+if '' in xml_input['coord']: flag_coord = 0
+if 'C2G' in xml_input['coord']: flag_coord = 1
+if 'G2C' in xml_input['coord']: flag_coord = 2
+if 'C2E' in xml_input['coord']: flag_coord = 3
+if 'E2C' in xml_input['coord']: flag_coord = 4
+if 'E2G' in xml_input['coord']: flag_coord = 5
+if 'G2E' in xml_input['coord']: flag_coord = 6
+
 subscan_total = 0
 for i_scanset in range(0,nb_scanset):
-    if 'E2G' in xml_input['coord']:
-        if (("sim" == xml_input['run_type']) | ("extTODmm" == xml_input['run_type']) | ("sim_sidelobe" == xml_input['run_type']) | ("sim_diffsidelobe" == xml_input['run_type']) ):
-            print CES['dir_ptg'][i_scanset]
-            ptg_idx = lmm.read_LBptg_idx(CES['dir_ptg'][i_scanset]+'.db')
-            subscan_total += len(ptg_idx['s_idx'])
-            subscan_interval_julian = ptg_idx['subscan_interval']
+    if (("sim" == xml_input['run_type']) | ("extTODmm" == xml_input['run_type']) | ("sim_sidelobe" == xml_input['run_type']) | ("sim_diffsidelobe" == xml_input['run_type']) ):
+        print CES['dir_ptg'][i_scanset]
+        ptg_idx = lmm.read_LBptg_idx(CES['dir_ptg'][i_scanset]+'.db')
+        subscan_total += len(ptg_idx['s_idx'])
+        subscan_interval_julian = ptg_idx['subscan_interval']
 
 gain_cl = lib_g.gen_gain4mm()
 gain_cl.sqlite_command = 'select * from GainParams;'
@@ -225,15 +233,14 @@ i_subscan = 0
 f_subscan = 0
 for i_scanset in range(0,nb_scanset):
     print "i_scanset", i_scanset+1, '/', nb_scanset
-    if 'E2G' in xml_input['coord']:
-        if (("sim" == xml_input['run_type']) | ("extTODmm" == xml_input['run_type']) | ("sim_sidelobe" == xml_input['run_type']) |  ("sim_diffsidelobe" == xml_input['run_type'])):
-            print CES['dir_ptg'][i_scanset]
-            ptg_package = lmm.read_LBptg(CES['dir_ptg'][i_scanset]+'.npz') 
-            ptg_idx = lmm.read_LBptg_idx(CES['dir_ptg'][i_scanset]+'.db')
-            f_subscan += len(ptg_idx['s_idx'])
-        if (("sim_sidelobe" == xml_input['run_type']) | ("sim_diffsidelobe" == xml_input['run_type'])):
-            ptg_package2 = lmm.read_LBptg(CES2['dir_ptg'][i_scanset]+'.npz') 
-            
+    if (("sim" == xml_input['run_type']) | ("extTODmm" == xml_input['run_type']) | ("sim_sidelobe" == xml_input['run_type']) |  ("sim_diffsidelobe" == xml_input['run_type'])):
+        print CES['dir_ptg'][i_scanset]
+        ptg_package = lmm.read_LBptg(CES['dir_ptg'][i_scanset]+'.npz',flag_coord) 
+        ptg_idx = lmm.read_LBptg_idx(CES['dir_ptg'][i_scanset]+'.db')
+        f_subscan += len(ptg_idx['s_idx'])
+    if (("sim_sidelobe" == xml_input['run_type']) | ("sim_diffsidelobe" == xml_input['run_type'])):
+        ptg_package2 = lmm.read_LBptg(CES2['dir_ptg'][i_scanset]+'.npz',flag_coord) 
+
     inputs["relgain"] = gain_in[:,i_subscan:f_subscan]
     inputs["gain_type"] = xml_input['gain_type']
     inputs["gain_corr"] = xml_input['gain_corr']

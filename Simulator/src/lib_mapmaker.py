@@ -738,7 +738,7 @@ def read_ptg(filename):
 # read the pointing file
 #  input: boresight fits filename
 #  output: {ra, dec, pa, hwp}
-def read_LBptg(filename):
+def read_LBptg(filename, flag_coord):
     print ""
     print "[READ PTG]: BEGIN reading LB pointing: "+filename 
     ptg = np.load(filename)
@@ -746,7 +746,10 @@ def read_LBptg(filename):
     lon = ptg['lon']
     pa = ptg['pa']
     hwp = np.zeros(len(lat))
-    glon,glat = euler_astrolib(lon*radeg,lat*radeg,5,FK4='J2000')
+    if flag_coord != 0:
+        glon,glat = euler_astrolib(lon*radeg,lat*radeg,flag_coord,FK4='J2000')
+    if flag_coord == 0:
+        glon, glat = lon*radeg, lat*radeg
     ptg_package = {'pa':pa, 'glon':glon/radeg, 'glat':glat/radeg, 'hwp':hwp}
 #    print 'HWP angle [degs]', ptg[4]/pi*180.
     print "[READ PTG]: END reading "
