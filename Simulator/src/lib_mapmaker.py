@@ -2459,7 +2459,9 @@ def main_simulator(inputs):
 
             top_dat = (relgain[pix_list[i_pix][0],i_hscan])*top_tod[i_tod]
             bot_dat = (relgain[pix_list[i_pix][1],i_hscan])*bot_tod[i_tod]
-            
+
+#            print relgain[pix_list[i_pix][0],i_hscan], top_tod[i_tod]
+#            sys.exit()
             if gain_corr == 'dipole':
                 top_dipole_dat = top_dipole[i_tod]
                 bot_dipole_dat = bot_dipole[i_tod]
@@ -2468,6 +2470,14 @@ def main_simulator(inputs):
             packedTOD_ = SignalFilt(top_dat, bot_dat, poly_n, 0, option_silent)
             packedTODout = ConcatenateTOD(packedTODout,packedTOD_,0,option_silent)
             packedPTGout = ConcatenatePTG(packedPTGout,top_ptg_out,bot_ptg_out,hwpang[i_tod],i_tod,0,option_silent)
+
+            #{'sum_tod':sum_tod_filt, 'dif_tod':dif_tod_filt, 'sum_std':sum_std, 'dif_std':dif_std}
+#            print 'packedTODout'
+#            print packedTODout['sum_tod'], packedTODout['dif_tod'], packedTODout['sum_std'], packedTODout['dif_std']
+            #{"top_ra":top_ra, "top_dec":top_dec, "top_pa":top_pa, "bot_ra":bot_ra, "bot_dec":bot_dec, "bot_pa":bot_pa, "hwp":hwpang}
+#            print 'packedPTGout'
+#            print packedPTGout['top_ra'], packedPTGout['top_dec'], packedPTGout['top_pa'], packedPTGout['bot_ra'], packedPTGout['bot_dec'], packedPTGout['bot_pa'], packedPTGout['hwp']
+#            sys.exit()
 
         if option_silent==False: info('[MAIN_MAPMAKER: pre-MapMake func] runtime', runtime_init) #,option_silent)
         MapMake(i_pix, nsideout, packedTODout, packedPTGout, packedMap, runtime_init, option_silent, option_pixelmapio)

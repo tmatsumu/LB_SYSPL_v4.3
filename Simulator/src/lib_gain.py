@@ -80,6 +80,8 @@ class gen_gain4mm():
 #                                        int(np.random.uniform(1e-10,1e10,1)))
 #                gain_out[i][:] = 1. + tmp
 
+            if 'ideal' in self.gain_type:
+                gain_out[i][:] = np.ones(num_subscan)
             if 'bias' in self.gain_type: #gain_in['gain_type'][i]:
                 gain_out[i][:] = 1.+ np.ones(num_subscan)*gain_in['params1'][i]
             if 'random_r' in self.gain_type: #gain_in['gain_type'][i]:
@@ -145,7 +147,6 @@ def NoiseGen_auto(nbData,fsample,net,fknee,power,seed,model):
     psd_complex = complex_arr(real_psdout,imag_psdout)
     top_noise = fft.ifft(psd_complex)
     return np.array(top_noise.real)*np.sqrt(2.*nbData)
-
 
 def complex_arr(arr1,arr2):
     nb1 = np.size(arr1)
